@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+
+    <script type="text/javascript">
+
+
+var fullname = 'John Doe';
+var obj = {
+   fullname: 'Colin Ihrig',
+   prop: {
+      fullname: 'Aurelio De Rosa',
+      getFullname: function() {
+         return this.fullname;
+      }
+   }
+};
+
+console.log(obj.prop.getFullname());
+
+var test = obj.prop.getFullname;
+
+console.log(test.call(obj.prop));
+
+console.log(test());
+
+(function() {
+   console.log(b);
+})();
+
+
+
+console.log(b);
+       </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

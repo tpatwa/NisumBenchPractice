@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+
+
+    <script type="text/javascript" >
+        $("document").ready(function()
+        {
+//$("p:contains(3)").css("border","3px solid blue")
+            //$(":contains(3)").css("border","3px solid blue")
+
+           // $("p:parent").css("border", "3px solid blue")
+         //   $("ul li:last-child").css("border", "3px solid blue")
+
+            $("ul li:nth-child(2n)").css("border", "3px solid blue")
+        });
+    </script>
+    <style type="text/css">
+        .a { color : red; }
+        .b {color : YellowGreen; }
+
+    </style>
+</head>
+<body>
+<ul id="list1">
+    <li class="a">Item 1</li>
+    <li class="a">Item 1</li>
+    <li class="b">Item 2</li>
+    <li class="b">Item 3</li>
+</ul>
+<p class="a">This is paragraph 1</p>
+<p id="para1">This is paragraph 2</p>
+<p class="b">This is paragraph 3</p>
+<p>This is paragraph 1</p>
+
+</body>
+</html>

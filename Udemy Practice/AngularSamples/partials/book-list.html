@@ -1,0 +1,27 @@
+<div id="bookListWrapper">
+    <form role="form">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search Here..">
+        </div>
+    </form>
+    <div>
+        <ul class="list-unstyled">
+            <li class="book"
+                style="background: white no-repeat"
+                    ng-repeat="book in Books">
+                <div class="book-details clearfix">
+                    <h3>{{book.name}}</h3>
+                    <p>{{book.price}}</p>
+                    <ul class="list-unstyled list-inline">
+                        <li>{{book.rating}}</li>
+                        <li>{{book.binding}}</li>
+                        <li>{{book.publisher}}</li>
+                        <li>{{book.releaseDate}}</li>
+                    </ul>
+                    <p>{{book.details}}</p>
+                    <button class="btn btn-info pull-right">Add to cart</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

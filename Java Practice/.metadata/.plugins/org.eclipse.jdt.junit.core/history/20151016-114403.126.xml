@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MavenOnlineShop (8)" project="MavenOnlineShop" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="TestRunner" time="0.006">
+    <testsuite name="Feature: Calculator" time="0.006">
+      <testsuite name="Scenario: Add two numbers" time="0.006">
+        <testcase name="Given I have a calculator" classname="Scenario: Add two numbers" time="0.002"/>
+        <testcase name="When I add 2 and 3" classname="Scenario: Add two numbers" time="0.0"/>
+        <testcase name="Then the result should be 5" classname="Scenario: Add two numbers" time="0.004"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

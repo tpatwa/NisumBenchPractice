@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <script type="text/javascript" >
+
+      $("document").ready(function(){
+          alert("P Elemnets : " + $("p").size() + "" + $("p").length)
+          var elms=  $("li").get()
+          alert("P Elemnets : " + elms.length)
+          var thirdElm=  $("li").get(2)
+          alert("Third Eleme : " + thirdElm.className )
+          $("ul").find("li.b").css("border", "3px solid blue")
+var border=0;
+          var leftmargin=0;
+          $("p").each(function() {
+
+              $(this).css("border", border + "px solid blue");
+              $(this).css("margin-left", leftmargin);
+              border += 2;
+              leftmargin += 10;
+          })
+
+      });
+        </script>
+</head>
+<body>
+<ul id="list1">
+    <li class="a">Item 1</li>
+    <li class="a">Item 1</li>
+    <li class="b">Item 2</li>
+    <li class="b">Item 3</li>
+    <li class="b">Item 5</li>
+</ul>
+<p class="a">This is paragraph 1</p>
+<p id="para1">This is paragraph 2</p>
+<p class="b">This is paragraph 3</p>
+<p>This is paragraph 1</p>
+</body>
+</html>

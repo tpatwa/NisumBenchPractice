@@ -1,0 +1,128 @@
+
+Wednesday, September 30, 2015
+Time:	2:50 PM
+
+mysql note
+http://www.thegeekstuff.com/2010/08/allow-mysql-client-connection/
+
+
+https://nisum.skillport.com/skillportfe/main.action#whatshappening
+Passw0rd
+
+to delete the service 
+system32> sc delete MySQL
+
+
+to delete the service 
+system32> sc delete MySQL
+
+
+bash>mysqld --install
+
+
+then start mysql service in Services (run as admin)
+
+
+bash>mysql -u root -p
+password: (press enter ,no password needed)
+
+mysql>use mysql
+
+> update mysql.user set password = 'pass123' where user = 'root';
+
+
+>select user,host from user
+
+
+C:\mysql>mysql -h 192.168.7.182 -u root -p
+
+Show databases
+
+desc tbl_movie
+
+CREATE TABLE tbl_movies(
+     movie_id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     title VARCHAR(255) NOT NULL,
+
+https://nisum.skillport.com/skillportfe/main.action#whatshappening
+Passw0rd
+
+
+release_year BIGINT(20),
+director VARCHAR(255),
+     PRIMARY KEY (movie_id));
+
+
+
+CREATE TABLE stock(
+  `STOCK_ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `STOCK_CODE` varchar(10) NOT NULL,
+  `STOCK_NAME` varchar(20) NOT NULL,
+  PRIMARY KEY (`STOCK_ID`) USING BTREE,
+  UNIQUE KEY `UNI_STOCK_NAME` (`STOCK_NAME`),
+  UNIQUE KEY `UNI_STOCK_ID` (`STOCK_CODE`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+
+
+
+CREATE TABLE stock(
+  `STOCK_ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `STOCK_CODE` varchar(10) NOT NULL,
+  `STOCK_NAME` varchar(20) NOT NULL,
+  PRIMARY KEY (`STOCK_ID`) USING BTREE
+ ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+
+package com.SpringHibernate.common;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.SpringHibernate.stock.bo.StockBo;
+import com.SpringHibernate.stock.model.Stock;
+
+public class MainApp {
+
+	
+
+
+
+	    public static void main( String[] args )
+	    {
+	    	ApplicationContext appContext = 
+	    		new ClassPathXmlApplicationContext("BeanLocations.xml");
+		
+	    	StockBo stockBo = (StockBo)appContext.getBean("stockBo");
+	    	
+	    	/** insert **/
+	    	Stock stock = new Stock();
+	    	stock.setStockCode("7668");
+	    	stock.setStockName("HAIO");
+	    	stockBo.save(stock);
+	    	
+	    	/** select **/
+	    	Stock stock2 = stockBo.findByStockCode("7668");
+	    	System.out.println(stock2);
+	    	
+	    	/** update **/
+	    	stock2.setStockName("HAIO-1");
+	    	stockBo.update(stock2);
+	    	
+	    	/** delete **/
+	    	stockBo.delete(stock2);
+	    	
+	    	System.out.println("Done");
+	    }
+	}
+
+
+Cucumber
+Jmeter
+clean up the excelsheet
+
+https://gimmethegoodstuff.org/safe-product-guides/safe-infant-formula-guide/
+
+
+update site - http://cucumber.github.com/cucucmber-eclipse/update-site
+
+green blue orange

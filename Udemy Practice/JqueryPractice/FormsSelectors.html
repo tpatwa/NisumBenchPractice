@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+
+
+    <script type="text/javascript" >
+
+$("document").ready(function(){
+    $("form :input").css("border","3px solid blue");
+
+});
+    </script>
+</head>
+<body>
+<form>
+    <table>
+
+        <tr>
+
+            <td>
+               <label id="lblName">Name: </label>
+            </td>
+
+            <td>
+                <input type="text" id="txtName"></td>
+
+        </tr>
+        <tr>
+
+            <td>
+
+                <input type="radio" value="Female" name="rdoFemale" >Female</input>
+
+            </td>
+
+            <td>
+                <input type="radio" value="Male" name="rdoMale">Male</input>
+
+            </td>
+        </tr>
+
+
+        <tr>
+
+            <td>
+                <input type="checkbox" name="chk1" checked="true">
+
+            </td>
+
+            <td>
+                <input type="checkbox" name="chk2">
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>
